@@ -42,46 +42,46 @@ export default function CountryCard({
           <h3 className='text-xl font-semibold block sm:hidden'>{id}</h3>
         </div>
         <div className='flex items-center'>
-          <div className='flex md:w-20 sm:w-12 w-8'>
+          <div className='flex md:w-20 sm:w-16 w-8'>
             <Image
-              className='w-22 sm:block object-cover'
+              className='w-22 hidden sm:block object-cover'
               src='https://gstatic.olympics.com/s1/t_original/static/srm/paris-2024/medalGold_selected.svg'
               alt='Medalhas de ouro'
               width={24}
               height={24}
             />
-            <span className='ml-2'>{goldMedals}</span>
+            <span className='sm:ml-2'>{goldMedals}</span>
           </div>
-          <div className='flex md:w-20 sm:w-12'>
+          <div className='flex md:w-20 sm:w-16 w-8'>
             <Image
-              className=' sm:block'
+              className='hidden sm:block'
               src='https://gstatic.olympics.com/s1/t_original/static/srm/paris-2024/medalSilver.svg'
               alt='Medalhas de prata'
               width={24}
               height={24}
             />
-            <span className='ml-2'>{silverMedals}</span>
+            <span className='sm:ml-2'>{silverMedals}</span>
           </div>
-          <div className='flex md:w-20 sm:w-12'>
+          <div className='flex md:w-20 sm:w-16 w-8'>
             <Image
-              className=' sm:block'
+              className='hidden sm:block'
               src='https://gstatic.olympics.com/s1/t_original/static/srm/paris-2024/medalBronze.svg'
               alt='Medalhas de bronze'
               width={24}
               height={24}
             />
-            <span className='ml-2'>{bronzeMedals}</span>
+            <span className='sm:ml-2'>{bronzeMedals}</span>
           </div>
-          <div className='flex md:w-20 sm:w-12'>
+          <div className='flex md:w-20 sm:w-16 w-8'>
             <Image
-              className=' sm:block'
+              className='hidden sm:block'
               src='https://gstatic.olympics.com/s1/t_original/static/srm/paris-2024/medalAll.svg'
               width={24}
               height={24}
               alt='Total de medalhas'
               title='Total de medalhas'
             ></Image>
-            <span className='text-lg font-bold ml-2'>{totalMedals}</span>
+            <span className='text-lg font-bold sm:ml-2 w-8'>{totalMedals}</span>
           </div>
         </div>
       </div>
