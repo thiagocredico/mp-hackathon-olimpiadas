@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={paris2024.className}>
         <main className='w-full bg-gray-100 min-h-screen flex flex-col items-center'>
-          <nav className='w-full bg-[rgb(212,196,124)] h-auto flex items-center justify-center'>
+          <nav className='w-full bg-gradient-to-b from-amber-200 to-[rgb(212,196,124)] h-auto flex items-center justify-center'>
             <section className=' flex items-center gap-3 p-4 al'>
               {/* <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -62,7 +62,7 @@ export default function RootLayout({
               {/* <h1 className='font-bold text-2xl'>Olimpíadas</h1> */}
             </section>
           </nav>
-          <div className='flex gap-6 mt-6'>
+          <div className='flex justify-around md:gap-6 mt-6'>
           <button className=' hover:border-amber-300 hover:shadow-xl bg-white hover:bg-gray-100 text-gray-800 font-semibold uppercase py-2 px-4 border border-gray-400 rounded-full shadow'>
               <Link href={`/`}>home</Link>
             </button>
