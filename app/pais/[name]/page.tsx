@@ -63,7 +63,7 @@ export default async function CountryPage({
   searchParams: { page = 1 },
 }: {
   params: { name: string };
-  searchParams: { page?: number };
+  searchParams: { page: number };
 }) {
   const country = await getCountryByName(decodeURI(name));
 
